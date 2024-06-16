@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(20,36,68);
+    height: 100vh;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    max-width: 1536px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+}
+header img{
+    width: 98px;
+}
+header button,
+section .text button{
+    color: white;
+    background: rgb(35,105,246);
+    border-radius: 50px;
+    padding: 10px 32px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header button:hover,
+section .text button:hover{
+    background: rgb(24,73,172);
+}
+section{
+    max-width: 1536px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 32px;
+    display: flex;
+    margin-top: 10vh;
+}
+section .pic{
+    width: 40%;
+}
+section .pic img{
+    width: 100%;
+}
+section .text{
+    font-size: 32px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+section .text button{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin-top: 50px;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+}
+footer .wrapper{
+    max-width: 1536px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+footer .powered{
+    font-size: 17px;
+    color: white;
+    display: flex;
+    align-items: end;
+}
+footer .powered img{
+    width: 60px;
+    margin-left: 10px;
+}
+footer .line{
+    width: 100%; 
+    height: 1px;
+    background: rgba(255,255,255,0.12);
+    margin: 2vh 0;
+}
+footer .rights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+footer .rights a{
+    color: white;
+}
+@media (max-width: 1232px) {
+    section .pic {
+        width: 60%;
+    }
+    section .text {
+        font-size: 30px;
+        margin-left: 10vw;
+    }
+    section .text button{
+        display: block;
+    }
+}
+@media (max-width: 800px) {
+    section{
+        display: block;
+        margin-top: 5vh;
+    }
+    section .pic {
+        width: 100%;
+    }
+    section .pic img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    section .text {
+        margin-top: 3vh;
+        font-size: 30px;
+        margin-left: 0;
+    }
+    section .text p{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 450px) {
+    header{
+        padding: 15px;
+    }
+    header img {
+        width: 80px;
+    }
+    header button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    section .text p{
+        font-size: 6vw;
+    }
+    footer .wrapper{
+        padding: 0 15px;
+    }
+}
+@media (max-width: 354px) {
+    footer .rights {
+        display: block;
+    }
+}
